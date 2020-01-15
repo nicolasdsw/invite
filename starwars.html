@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animação - Star Wars</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+		body {
+			color: yellow;
+			background-color: black;
+			font-weight: bold;
+			font-family: 'Source Sans Pro';
+		}
+		.wrapper {
+			width: 300px;
+			margin: auto;
+			animation: sobe 540s linear forwards;
+			animation-fill-mode: forwards;
+			text-align:justify;
+		}
+
+		.angulacao {
+			perspective: 300px;
+			perspective-origin: 50% 0px;
+			transform-style: preserve-3d;
+		}
+
+		@keyframes sobe {
+			from {transform: rotateX(90deg) translateY(325px);}
+			to {transform: rotateX(90deg) translateY(-2000px);}
+		}
+
+		.titulo {
+			text-align:center;
+			font-size: 5em;
+			animation: some 200s;
+		}
+
+		@keyframes some {
+			from {opacity: 1; transform: translateZ(300px);}
+			to{opacity: 0; transform: translateZ(-10000px);}
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="angulacao">
+<h1 class="titulo">STAR WARS</h1>
+
+<div class="wrapper">
+	
+
+
+
+<p>It is a period of civil war.
+Rebel spaceships, striking
+from a hidden base, have won
+their first victory against
+the evil Galactic Empire.</p>
+<p>
+During the battle, Rebel
+spies managed to steal secret
+plans to the Empire's
+ultimate weapon, the DEATH
+STAR, an armored space
+station with enough power
+to destroy an entire planet.</p>
+<p>
+Pursued by the Empire's
+sinister agents, Princess
+Leia races home aboard her
+starship, custodian of the
+stolen plans that can save her
+people and restore
+freedom to the galaxy....</p>
+
+	</div>
+	
+</div>
+
+<audio controls hidden="true" autoplay>
+  <source src="starwars.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+
+</body>
+</html>
